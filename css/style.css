@@ -1,0 +1,537 @@
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+outline: none;
+}
+img {
+display: block;
+width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display';
+font-weight: normal;
+}
+body {
+font-family: 'Open Sans', arial, sans-serif;
+font-size: 15px;
+line-height: 1;
+color: #fff;
+background-image: url(https://wallpapershome.ru/images/wallpapers/rainbow-six-siege-1920x1080-luchshie-igri-shuter-fps-pk-ps4-xbox-one-1979.jpg);  
+background-repeat: no-repeat;
+background-size: 1550px;
+background-color: black;
+
+}
+.back {
+  
+}
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+content: "";
+display: table;
+clear: both;
+} 
+/* стилевой класс, который управляет шириной контейнера сетки*/
+.container {
+margin: 0 auto;
+width: 100%;
+max-width: 960px;
+padding: 0 15px;
+} 
+header {
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+padding: 15px 0;
+margin-bottom: 30px;
+position: relative;
+}
+/* логотип */
+.logo {
+display: block; 
+float: left;
+}
+.logo span {
+color: white;
+display: inline-block;
+width: 30px;
+height: 30px;
+line-height: 30px;
+border-radius: 50%;
+margin: 5px 0;
+text-align: center;
+text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+}
+.logo span:nth-child(odd) {
+background: #800000;
+}
+.logo span:nth-child(even) {
+background: #800000;
+}
+/* меню */
+#menu {
+float: right;
+}
+#menu li {
+display: inline-block;
+margin-right: 30px;
+}
+#menu a {
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 600;
+display: block;
+line-height: 40px;
+}
+#menu a:hover {
+color: #f7f21a;
+}
+#menu li:last-child  {
+margin-right: 0;
+}
+
+/* кнопка переключения меню, появляющаяся при ширине 768px */
+.nav-toggle {
+display: none;
+position: relative;
+float: right;
+width: 45px;
+height: 40px;
+margin-left: 20px;
+background: rgba(255,255,255,0.5);
+cursor: pointer;
+border-radius: 9px;
+}
+.nav-toggle span {
+display: block;
+position: absolute;
+top: 19px;
+left: 8px;
+right: 8px;
+height: 2px;
+background: black;
+}
+.nav-toggle span:before, .nav-toggle span:after {
+content: "";
+position: absolute;
+display: block;
+left: 0;
+width: 100%;
+height: 2px;
+background: black;
+}
+.nav-toggle span:before {
+top: -10px;
+}
+.nav-toggle span:after {
+bottom: -10px;
+}
+/* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+#menu.active {
+max-height: 198px;
+}
+/* левый контейнер */
+.posts-list {
+margin-bottom: 30px;
+width: 64%;
+float: left;
+}
+/* блок для статьи */
+.post {
+margin-bottom: 35px;
+}
+.post-content p {
+line-height: 1.5;
+padding-bottom: 1em;
+}
+.post-image {
+margin-bottom: 30px;
+}
+.category {
+margin-bottom: 15px;
+  
+}
+.category a {
+color: white;
+text-transform: uppercase;
+  color:#f7f21a;
+}
+.post-title {
+margin-bottom: 12px;
+font-size: 20px;
+  color: #f7f21a;
+}
+/* блок с кнопкой "описание обновления"*/
+.post-footer {
+border-top: 1px solid #EBEBE3;
+border-bottom: 1px solid #EBEBE3;
+position: relative;
+margin-top: 15px;
+}
+.more-link {
+position: relative;
+display: inline-block;
+font-size: 10px;
+text-transform: uppercase;
+color: white;
+line-height: 44px;
+padding: 0 22px;
+background: #3C3D41;
+letter-spacing: 0.1em;
+white-space: nowrap;
+}
+.more-link:after {
+content: '';
+display: block;
+position: absolute;
+width: 0;
+height: 0;
+top: 0;
+right: 0;
+border: solid transparent;
+border-width: 22px 18px;
+border-left-color: #3C3D41;
+transform: translateX(100%);
+}
+/* правый контейнер */
+aside {
+width: 33%;
+float: right;
+}
+/* блок для виджетов */
+.widget {
+padding: 20px 15px;
+background: rgba(0, 0, 0, 0.7);
+font-size: 13px;
+margin-bottom: 30px;
+box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+}
+.widget-title {
+font-size: 18px;
+padding: 10px;
+margin-bottom: 20px;
+text-align: center;
+border: 2px solid #f7f21a;
+box-shadow: 3px 3px 0 0 #f7f21a;
+}
+.widget-category-list li {
+border-bottom: 1px solid #f7f21a;
+padding: 10px 0;
+color: #f7f21a;
+font-style: italic;
+}
+.widget-category-list li:last-child {
+border-bottom: none;
+}
+.widget-category-list li a {
+color: #f7f21a;
+margin-right: 6px;
+font-style: normal;
+}
+.widget-category-list li a:before {
+content: "\f105";
+display: inline-block;
+font-family: 'FontAwesome';
+margin-right: 10px;
+color: #f7f21a;
+}
+.widget-posts-list li {
+border-top: 1px solid #ffffff;
+padding: 15px 0;
+}
+.widget-posts-list li:nth-child(1) {
+border-top: none;
+}
+.post-image-small {
+width: 30%;
+float: left;
+margin-right: 15px;
+}
+.widget-post-title {
+float: left;
+}
+/* форма подписки */
+#subscribe {
+position: relative;
+width: 100%;
+padding: 15px 0;
+}
+#subscribe input {
+width: 100%;
+display: block;
+float: left;
+border: 2px solid #ffffff;
+padding: 0 0 0 10px;
+height: 40px;
+position: relative;
+outline: none;
+color: #ffffff  ;
+font-style: italic;
+}
+#subscribe button {
+padding: 0 15px;
+background: transparent;
+height: 40px;
+border: none;
+position: absolute;
+right: 0;
+color: #EF5A42;
+cursor: pointer;
+font-size: 18px;
+}
+#subscribe input:focus + button {
+background: #EF5A42;
+color: black;
+}
+footer {
+padding: 30px 0;
+background: rgba(0, 0, 0, 0.5);
+color: white;
+}
+.footer-col {
+width: 50%;
+float: center;
+}
+.footer-col a {
+color: white;
+}
+.footer-col:last-child {
+text-align: right;
+}
+.social-bar-wrap {
+text-align: center;
+}
+.social-bar-wrap a {
+padding: 0 7px;
+font-size: 18px;
+}
+@media (max-width: 768px) {
+/* показываем кнопку для переключения верхней навигации */
+.nav-toggle {
+display: block;
+}
+header {
+padding: 10px 0;
+}
+/* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */ 
+#menu {
+max-height: 0;
+background: black;
+float: none;
+position: absolute;
+overflow: hidden;
+top: 63px;
+right: 0;
+left: 0;
+margin: 0;
+padding: 0;
+z-index: 3;
+}
+/* делаем элементы списка блочными, чтобы они располагались друг под другом */
+#menu li {
+display: block;
+text-align: center;
+border-bottom: 10px solid #;
+margin-right: 0;
+}
+/* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
+.posts-list, aside {
+width: 100%;
+float: none;
+}
+.widget-post-title {
+font-size: 1.5em;
+}
+}
+@media (max-width: 480px) {
+/* отменяем обтекание для логотипа и выравниваем по центру*/
+.logo {
+float: none;
+margin: 0 auto 15px;
+display: table;
+}
+.logo span {
+margin: 0 2px;
+}
+/* позиционируем меню на увеличившуюся высоту шапки */
+#menu {
+top: 118px;
+}
+/* позиционируем форму поиска по левому краю */
+#searchform {
+float: left;
+margin-left: 0;
+}
+/* убираем верхнюю и нижнюю границы и выравниваем кнопку по центру */
+.post-footer {
+border-top: none;
+border-bottom: none;
+text-align: center;
+}
+/* отменяем обтекание для столбцов подвала страницы */
+.footer-col {
+float: none;
+margin-bottom: 20px;
+width: 100%;
+text-align: center;
+
+}
+.footer-col:last-child {
+text-align: center;
+margin-bottom: 0;
+
+}
+}
+.hh{
+text-align: center;
+margin: 0 auto;
+width: 100%;
+max-width: 960px;
+padding:  15px;
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+margin-bottom: 30px;
+position: relative;
+color: #f7f21a;
+
+
+padding: 10px;
+border: 2px solid #f7f21a;
+box-shadow: 3px 3px 0 0 #f7f21a; 
+   
+}
+.hh2{
+text-align: center;
+margin: 0 auto;
+width: 100%;
+max-width: 960px;
+padding:  15px;
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+padding: 15px 0;
+margin-bottom: 30px;
+position: relative; 
+}
+.hh3{
+text-align: center;
+margin: 0 auto;
+width: 100%;
+max-width: 960px;
+padding:  15px;
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+padding: 15px 0;
+color: #f7f21a;    
+}
+.hh4{
+text-align: center;
+padding:  15px; 
+}
+.post-image-center {
+width: 30%;
+float: left;
+margin-right: 15px;
+}
+.widget-post-text {
+	color: #f7f21a;
+float: left;
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+padding: 15px 0
+}
+/* форма подписки */
+#subscribe {
+position: relative;
+width: 100%;
+padding: 15px 0;
+}
+.widget-post-text-1 {
+float: left;
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+padding: 15px 0
+}
+/* форма подписки */
+#subscribe {
+position: relative;
+width: 100%;
+padding: 15px 0;
+
+}
+.imgblock {
+    
+}
+
+.imgblock img {
+    height: 160px;
+    width: 250px;
+}
+.imgblock span {
+    /*background: rgba(0,0,0,0.7); (полупрозрачность)*/
+    background: #222;
+    color: #fff;
+    border-radius: 5px;
+    right: 0;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+	
+.operators {
+    position: relative;
+    display: inline-block;
+}
+
+.operators img {
+    height: 150px;
+    width: 90px;
+}
+.operators span {
+    /*background: rgba(0,0,0,0.7); (полупрозрачность)*/
+    background: #222;
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+	
+.bb {
+margin-bottom: 105px;
+text-align: center;
+font-size: 18px;
+padding: 10px;
+margin-bottom: 20px;
+text-align: center;
+border: 2px solid #f7f21a;
+box-shadow: 3px 3px 0 0 #f7f21a;
+  
+}
+.bb a {
+	text-align: center;
+color: white;
+text-transform: uppercase;
+  color:#f7f21a;
+}
+ 
+.post-a {
+	text-align: center;
+margin-bottom: 12px;
+font-size: 20px;
+  color: #f7f21a;
+}
+
+	
+	
