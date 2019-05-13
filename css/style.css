@@ -26,7 +26,7 @@ line-height: 1;
 color: #fff;
 background-image: url(https://wallpapershome.ru/images/wallpapers/rainbow-six-siege-1920x1080-luchshie-igri-shuter-fps-pk-ps4-xbox-one-1979.jpg);  
 background-repeat: no-repeat;
-background-size: 1550px;
+background-size: 100%;
 background-color: black;
 
 }
@@ -437,6 +437,12 @@ color: #f7f21a;
 .hh4{
 text-align: center;
 padding:  15px; 
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+padding: 15px 0;
+margin-bottom: 30px;
+position: relative;
 }
 .post-image-center {
 width: 30%;
@@ -533,5 +539,64 @@ font-size: 20px;
   color: #f7f21a;
 }
 
-	
+.post-image img {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.post-image img:hover {
+  -webkit-filter: brightness(180%);
+}
+
+.post-image-small img {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.post-image-small img:hover {
+  -webkit-filter: brightness(180%);
+}
+.widget-category-list img {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.widget-category-list img:hover {
+  -webkit-filter: brightness(180%);
+}
+.operators img {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.operators img:hover {
+  -webkit-filter: brightness(180%);
+}
+.imgblock img {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.imgblock img:hover {
+  -webkit-filter: brightness(180%);	
 	
