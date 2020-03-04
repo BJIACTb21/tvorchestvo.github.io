@@ -24,7 +24,7 @@ font-family: 'Open Sans', arial, sans-serif;
 font-size: 15px;
 line-height: 1;
 color: #fff;
-background-image: url(https://wallpapershome.ru/images/wallpapers/rainbow-six-siege-1920x1080-luchshie-igri-shuter-fps-pk-ps4-xbox-one-1979.jpg);  
+background-image: url(https://scontent.frix7-1.fna.fbcdn.net/v/t1.0-9/18527561_825829510901250_5821631097646988498_n.jpg?_nc_cat=106&_nc_sid=6e5ad9&_nc_ohc=Yl8_rCnSPeAAX-_KSyM&_nc_ht=scontent.frix7-1.fna&oh=e5fa2b175704c33ffd84592f4d6a95bc&oe=5E95A4EE);  
 background-repeat: no-repeat;
 background-size: 100%;
 background-color: black;
@@ -142,7 +142,7 @@ max-height: 198px;
 /* левый контейнер */
 .posts-list {
 margin-bottom: 30px;
-width: 64%;
+width: 60%;
 float: left;
 }
 /* блок для статьи */
@@ -155,10 +155,14 @@ padding-bottom: 1em;
 }
 .post-image {
 margin-bottom: 30px;
+width: 300px;
+ 
+  }
 }
 .category {
 margin-bottom: 15px;
-  
+width: 300px;
+height: 170px;  
 }
 .category a {
 color: white;
@@ -168,12 +172,10 @@ text-transform: uppercase;
 .post-title {
 margin-bottom: 12px;
 font-size: 20px;
-  color: #f7f21a;
+  color: black;
 }
 /* блок с кнопкой "описание обновления"*/
 .post-footer {
-border-top: 1px solid #EBEBE3;
-border-bottom: 1px solid #EBEBE3;
 position: relative;
 margin-top: 15px;
 }
@@ -252,7 +254,7 @@ padding: 15px 0;
 border-top: none;
 }
 .post-image-small {
-width: 30%;
+width: 28%;
 float: left;
 margin-right: 15px;
 }
@@ -410,17 +412,16 @@ box-shadow: 3px 3px 0 0 #f7f21a;
    
 }
 .hh2{
-text-align: center;
+text-align: inherit;
 margin: 0 auto;
 width: 100%;
 max-width: 960px;
-padding:  15px;
 width: 100%;
 background: rgba(0, 0, 0, 0.5);
 box-shadow: 3px 3px 1px rgba(0,0,0,.05);
 padding: 15px 0;
 margin-bottom: 30px;
-position: relative; 
+position: justify ; 
 }
 .hh3{
 text-align: center;
@@ -444,6 +445,8 @@ padding: 15px 0;
 margin-bottom: 30px;
 position: relative;
 }
+
+
 .post-image-center {
 width: 30%;
 float: left;
@@ -598,5 +601,4 @@ font-size: 20px;
 }
 
 .imgblock img:hover {
-  -webkit-filter: brightness(180%);	
-	
+  -webkit-filter: brightness(180%);
